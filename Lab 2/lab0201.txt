@@ -1,0 +1,15 @@
+1.1. As the new_Int input was an int the computer stored the given value of -42 as the_int
+1.2. As the new_Double input was not a double but a string, the computer stored new_Double as 0
+2. As the new_Int input included an Int (35) that was accompanied by a string (degrees) the computer stored the_Int as 35
+3. As the new_Int input included an Int (100) that was accompanied by a string (,000) the computer stored the_Int as 100
+4. the computer considers the space as the start of a new input meaning the computer stored 876 as the int and 543 as the double
+5. As the new_Int input was not an int nor a double the computer stored it as 0
+6. The end of the int (12) made the rest of the number pass on to the double
+7. The computer stored .995 as 0 in the int as there is no other number for it to store
+8. An int can only store a certain size of number
+
+Observations:
+1. The computer considers whitespace as a new line meaning that when experiment 4 was conducted it split 876 543 into
+876 and 543, upon further research, this works with all types of whitespace.
+2. An integer can only hold up to 2,147,483,647 meaning when experiment 8 was conducted it couldn't hold that large of
+number so it defaults to 2,147,483,647 or 2^31-1
