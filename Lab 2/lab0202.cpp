@@ -1,110 +1,135 @@
 /*
+Lab 2
+Room: E2 1792
 File: lab0202.cpp
 Course: SYDE/BME 121 – Digital Computation
 Author: Nicolas Galeteanu (Student #21253379)
 Purpose: Find the number of boxes of pencils, pens, and white out needed for The Write Stuff
-based on given data
-Date: 2025-09-12
+Date: 2025-10-02
 */
+
+
 #include <iostream>
 #include <ostream>
 #include <cmath>
 using namespace std;
 
 
-//initializing variables and constants:
+int main()
+{
+    // Initializing Constants
 
-double static totalEmployees;
+    // The number of office supplies their respective containers can hold
+    const double PEN_BOX_SIZE = 10;
+    const double PENC_BOX_SIZE = 25;
+    const double CF_BOTTLE_SIZE = 200;
 
-///Stores Employee stats in this order:<p>
-/// index 0: Number of Employees<p>
-/// index 1: Number of Pencils per Employee<p>
-/// index 2: Number of Pens per Employee<p>
-/// index 3: Amount of Correction Fluid per Employee in mL<p>
-double static jr_nums[4]= {0, 8, 7, 60};
+    // The number of pens each individual employee needs
+    const double JR_PEN_REQUIREMENT = 7;
+    const double SR_PEN_REQUIREMENT = 3;
+    const double ADMIN_PEN_REQUIREMENT = 6;
 
-///Stores Employee stats in this order:<p>
-/// index 0: Number of Employees<p>
-/// index 1: Number of Pencils per Employee<p>
-/// index 2: Number of Pens per Employee<p>
-/// index 3: Amount of Correction Fluid per Employee in mL<p>
-double static sr_nums[4] = {0, 5, 3, 12};
+    // The number of pencils each individual employee needs
+    const double JR_PENC_REQUIREMENT = 8;
+    const double SR_PENC_REQUIREMENT = 5;
+    const double ADMIN_PENC_REQUIREMENT = 2;
 
-///Stores Employee stats in this order:<p>
-/// index 0: Number of Employees<p>
-/// index 1: Number of Pencils per Employee<p>
-/// index 2: Number of Pens per Employee<p>
-/// index 3: Amount of Correction Fluid per Employee in mL<p>
-double static admin_nums[4] = {0, 2, 6, 40};
+    // The amount of correction fluid each individual employee needs
+    const double JR_CF_REQUIREMENT = 60;
+    const double SR_CF_REQUIREMENT = 12;
+    const double ADMIN_CF_REQUIREMENT = 40;
 
-///The size of the boxes in this order:<p>
-/// index 0: Number of Pencils per box<p>
-/// index 1: Number of Pens per box<p>
-/// index 2: Amount of Correction Fluid per box in mL<p>
-const double static BOX_SIZES[3] = {25, 10, 200};
+    // Declaring variables
 
-///Stores the number of boxes in this order:<p>
-/// index 0: Number of Pencil boxes<p>
-/// index 1: Number of Pen boxes<p>
-/// index 2: Amount of Correction Fluid boxes<p>
-int static boxNum[3];
+    //the total number of employees
+    double total_employees;
+
+    // Percentages of different types of employees
+    double jr_percent;
+    double sr_percent;
+    double adminPercent;    
+
+    // The head count of different types of employees
+    double jr_number;
+    double sr_number;
+    double admin_number;
+
+    // The number of pens each type of employee needs total
+    double jr_pens;
+    double sr_pens;
+    double admin_pens;
+
+    // The number of pencils each type of employee needs total
+    double jr_penc;
+    double sr_penc;
+    double admin_penc;
+
+    // The amount of correction fluid each type of employee needs total
+    double jr_CF;
+    double sr_CF;
+    double admin_CF;
+
+    // The total number of office supplies needed
+    double total_pens;
+    double total_penc;
+    double total_CF;
+
+    // The total number of containers of the office supplies needed
+    double pen_box;
+    double penc_box;
+    double cf_bottle;
 
 
-/// Sets the number of Employees using inputs given by the user
-static void setNumberOfEmployees() {
-    //gets the total number of employees from the user
-    cout <<"Enter the number of employees: ";
-    cin >> totalEmployees;
-    bool pass = false;
-    // Gets the percentage of jr and sr engineers from the user ensuring that the sum of them is between 0 and 100
-    while (!pass) {
-        cout<<"Enter the % of Jr. Engineers: ";
-        cin>>jr_nums[0];
-        cout<<"Enter the % of Sr. Engineers: ";
-        cin>>sr_nums[0];
-        if (100 >= jr_nums[0]+sr_nums[0] && 0<=jr_nums[0]+sr_nums[0]) {
-            pass = true;
-        } else {
-            cout<<"Invalid input, please ensure that you input the number of employees as a percentage\n\n";
-        }
-    }
 
-    //turns the percentages given into a number of employees
-    jr_nums[0]/=100;
-    sr_nums[0]/=100;
-    admin_nums[0] = 1-jr_nums[0] - sr_nums[0];
-    sr_nums[0]*=totalEmployees;
-    jr_nums[0]*=totalEmployees;
-    admin_nums[0]*=totalEmployees;
-}
+    // Get the total number of employees from the user
+    cout << "Enter the total number of employees: ";
+    cin >> total_employees;
 
-/// Finds the number of boxes based on the number of each type of employee
-static void findNumOfBoxes(){
-    /// Stores the number of boxes in this order:<p>
-    /// index 0: Number of Pencils<p>
-    /// index 1: Number of Pens<p>
-    /// index 2: Amount of Correction Fluid in mL<p>
-    double totalSupplies[3];
+    // Get the percentage of jr. engineers from the user
+    cout << "Enter the percentage (0-100) of Jr. Engineers: ";
+    cin >> jr_percent;
 
-    //finds the number of each supply for each type of employee
-    for (int i = 1; i < 4; i++) {
-        jr_nums[i]*=jr_nums[0];
-        sr_nums[i]*=sr_nums[0];
-        admin_nums[i]*=admin_nums[0];
-    }
+    // Get the percentage of sr. engineers from the user
+    cout << "Enter the percentage (0-100) of SR. Engineers: ";
+    cin >> sr_percent;
 
-    //finds the total of each supply and turns those values into number of boxes
-    for (int i = 0; i < 3; i++) {
-        totalSupplies[i] = jr_nums[i+1]+sr_nums[i+1]+admin_nums[i+1];
-        boxNum[i] = ceil(totalSupplies[i]/BOX_SIZES[i]);
-    }
-}
+    // Calculate the percentage of admin employees
+    adminPercent = 100 - jr_percent - sr_percent;
 
-///Runs
-int main() {
-    setNumberOfEmployees();
-    findNumOfBoxes();
-    cout<<"You need: "<<endl <<boxNum[0] <<" boxes of pencils\n"
-    <<boxNum[1]<< " boxes of pens\n"
-    << boxNum[2] << " bottles of correction fluid\n";
+    // Calculate the number of each type of employee using their respective percentage
+    jr_number = total_employees * jr_percent / 100;
+    sr_number = total_employees * sr_percent / 100;
+    admin_number = total_employees * adminPercent / 100;
+
+
+    // Calculate the total number of pens required for each type of employee
+    jr_pens = jr_number * JR_PEN_REQUIREMENT;
+    sr_pens = sr_number * SR_PEN_REQUIREMENT;
+    admin_pens = admin_number * ADMIN_PEN_REQUIREMENT;
+
+    // Calculate the total amount of correction fluid required for each type of employee
+    jr_CF = jr_number * JR_CF_REQUIREMENT;
+    sr_CF = sr_number * SR_CF_REQUIREMENT;
+    admin_CF = admin_number * ADMIN_CF_REQUIREMENT;
+
+    // Calculate the total number of pencils required for each type of employee
+    jr_penc = jr_number * JR_PENC_REQUIREMENT;
+    sr_penc = sr_number * SR_PENC_REQUIREMENT;
+    admin_penc = admin_number * ADMIN_PENC_REQUIREMENT;
+
+    // Calculate total number of each type of office supply
+    total_pens = jr_pens + sr_pens + admin_pens;
+    total_penc = jr_penc + sr_penc + admin_penc;
+    total_CF = jr_CF + sr_CF + admin_CF;
+
+    // Calculate the total number of container for each type of office supply
+    pen_box = ceil(total_pens / PEN_BOX_SIZE);
+    penc_box = ceil(total_penc / PENC_BOX_SIZE);
+    cf_bottle = ceil(total_CF / CF_BOTTLE_SIZE);
+
+    // Output the amount of containers for each type of office supply
+    cout << "You need:\n"
+        << pen_box << " Boxes of Pens\n"
+        << penc_box << " Boxes of Pencils\n"
+        << cf_bottle << " Bottles of Correction Fluid";
 }

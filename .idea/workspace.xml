@@ -5,6 +5,8 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -26,7 +28,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d9d0ad-3dfb-48bc-bb64-b42655100de5" name="Changes" comment="" />
+    <list default="true" id="69d9d0ad-3dfb-48bc-bb64-b42655100de5" name="Changes" comment="Test Commit">
+      <change afterPath="$PROJECT_DIR$/Lab 2/lab02021.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab 3/screentime.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab 4/lab0302.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab 4/wdhms.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab 4/wind.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 2/lab0202.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 2/lab0202.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 2/lab0202.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tick Tac Toe/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Tick Tac Toe/main.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +60,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nicolas-Galeteanu/untitled.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Nicolas-Galeteanu/BME121_Projects.git&quot;,
     &quot;accountId&quot;: &quot;d1c17053-2da6-4f51-ac98-960e304a6f0f&quot;
   }
 }</component>
@@ -65,44 +78,53 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3JLDc0yvcgsFRDQr8qhyHBbeSKB" />
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ File.Lab2Main.cpp.executor": "Run",
-    "C/C++ File.lab0202.cpp.executor": "Run",
-    "C/C++ File.main.cpp.executor": "Run",
-    "CMake Application.BME121_Projects.executor": "Run",
-    "CidrDebugProfileConversion": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.jshint": "true",
-    "node.js.selected.package.jshint": "",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/nicol/CLionProjects/BME121 Projects/main.cpp",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "CPPToolchains"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.Lab2Main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.lab0202.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.lab0202.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.lab02021.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.screentime.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.wdhms.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.wind.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.BME121_Projects.executor&quot;: &quot;Run&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nicol/CLionProjects/BME121 Projects/main.cpp&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 3" />
       <recent name="C:\Users\nicol\CLionProjects\BME121 Projects" />
       <recent name="C:\Users\nicol\CLionProjects\BME121 Projects\Tick Tac Toe" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.lab0202.cpp">
+  <component name="RunManager" selected="C/C++ File.wind.cpp">
     <configuration default="true" type="CMakeBoostTestRunConfigurationType" factoryName="Boost Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="BeforeTestRunTask" enabled="true" />
@@ -128,13 +150,14 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="lab0202" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="lab0202" CONFIG_NAME="lab0202">
+      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 2\lab0202.cpp" />
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lab0202.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="lab0202.cpp" CONFIG_NAME="lab0202.cpp">
-      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 2\lab0202.cpp" />
+    <configuration name="lab02021.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="lab02021.cpp" CONFIG_NAME="lab02021.cpp">
+      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 2\lab02021.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -145,29 +168,75 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="screentime" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="screentime" CONFIG_NAME="screentime">
+      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 3\screentime.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wdhms.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="wdhms.cpp" CONFIG_NAME="wdhms.cpp">
+      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 4\wdhms.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wind.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BME121_Projects" TARGET_NAME="wind.cpp" CONFIG_NAME="wind.cpp">
+      <option name="sourceFile" value="C:\Users\nicol\CLionProjects\BME121 Projects\Lab 4\wind.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="C/C++ File.main.cpp" />
-      <item itemvalue="C/C++ File.lab0202.cpp" />
+      <item itemvalue="C/C++ File.lab02021.cpp" />
+      <item itemvalue="C/C++ File.screentime" />
+      <item itemvalue="C/C++ File.wdhms.cpp" />
+      <item itemvalue="C/C++ File.wind.cpp" />
+      <item itemvalue="C/C++ File.lab0202" />
       <item itemvalue="CMake Application.BME121_Projects" />
     </list>
   </component>
-  <component name="SelectedDebugProfileService"><![CDATA[{
-  "profileIdByStamp": [
+  <component name="SelectedDebugProfileService">{
+  &quot;profileIdByStamp&quot;: [
     {
-      "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.lab0202.cpp"
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.screentime&quot;
       },
-      "second": "e027706d-e0cc-4bb8-9c23-c69897f72963"
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
     },
     {
-      "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.main.cpp"
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.wind.cpp&quot;
       },
-      "second": "e027706d-e0cc-4bb8-9c23-c69897f72963"
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.lab02021.cpp&quot;
+      },
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.lab0202&quot;
+      },
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.main.cpp&quot;
+      },
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.wdhms.cpp&quot;
+      },
+      &quot;second&quot;: &quot;e027706d-e0cc-4bb8-9c23-c69897f72963&quot;
     }
   ],
-  "modificationCount": 13
-}]]></component>
+  &quot;modificationCount&quot;: 21
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="69d9d0ad-3dfb-48bc-bb64-b42655100de5" name="Changes" comment="" />
@@ -197,6 +266,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

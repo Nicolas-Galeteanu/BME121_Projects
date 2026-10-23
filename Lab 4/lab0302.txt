@@ -1,0 +1,11 @@
+1. Divide the int by 0
+1a.The program does not continue running after the error occurs
+1b. No output
+
+2. Divide the double by 0.0
+2a. The program does continue running after the error occurs
+2b. The program outputs inf or infinite
+
+3.
+3a. The program does continue running after the error occurs
+3b. The program outputs -nan or not a number
