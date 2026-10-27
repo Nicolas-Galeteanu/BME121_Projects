@@ -11,4 +11,6 @@ add_executable(
         "Lab 2/lab02021.cpp"
         "Lab 2/lab0202.cpp"
         "Lab 4/wdhms.cpp"
-        "Lab 4/wind.cpp")
+        "Lab 4/wind.cpp"
+        "Lab 5/square.cpp"
+        "Lab 5/factorial.cpp")
